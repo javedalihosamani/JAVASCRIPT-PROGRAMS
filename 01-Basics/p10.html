@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1>Condition Statements..!</h1>
+        </center>
+          
+        <hr />
+          
+        <ol>
+            <li>Simple If</li>
+            <li>If Else</li>
+            <li>If Else Ladder</li>
+            <li>Switch Case</li>
+        </ol>
+        
+        <hr />
+
+        <h2>IF ELSE LADDER statement..!</h2>
+
+        <script>
+            let x = prompt("Enter the Value?"); /* window objects / BOM > browser object modal */
+            let y = prompt("Enter the Value?"); /* window objects / BOM > browser object modal */
+
+            let z = Number(x) + Number(y); /* used to convert the any type into number */
+
+            alert(z);
+
+            document.write("Variable X value is : ", x);
+
+            document.write(`<h3>Typeof Method : ${typeof(x)}</h3>`); // String
+
+
+            if (Number(x) === Number(y)) 
+            {
+                document.write(`<h2>Numbers are equal</h2>`);
+            } 
+            else if(Number(x) > Number(y))
+            {
+                document.write(`<h2>X Variable value is big</h2>`);
+            }
+            else if(Number(x) < Number(y))
+            {
+                document.write(`<h2>Y Variable value is big</h2>`);
+            } 
+            else if(Number(x) !== Number(y))
+            {
+                document.write(`<h2>Numbers are not equal</h2>`);
+            }
+            else{
+                document.write(`<h2>Enter Valid Data</h2>`);
+            }
+        </script>
+    </body>
+</html>

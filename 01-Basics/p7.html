@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1>Arithmetic Operators</h1>
+        </center>
+        <hr>
+
+        <script>
+            let firstNumber = 50;
+            let lastNumber = 30;
+
+            document.write(`<h2>Addition +</h2>`);
+            let addition = firstNumber + lastNumber;
+            document.write(`<h3>Addition of Two Numbers is :${addition}</h3><hr>`);
+
+            document.write(`<h2>Subtraction -</h2>`);
+            let subtraction	= firstNumber - lastNumber;
+            document.write(`<h3>Subtraction of Two Numbers is :${subtraction}</h3><hr>`);
+
+            document.write(`<h2>Multiplication *</h2>`);
+            let multiplication = firstNumber * lastNumber;
+            document.write(`<h3>Multiplication of Two Numbers is :${multiplication}</h3><hr>`);
+
+            document.write(`<h2>Division /</h2>`);
+            let division = firstNumber / lastNumber;
+            document.write(`<h3>Division of Two Numbers is :${division}</h3><hr>`);
+
+            document.write(`<h2>Modulus (Remainder) /</h2>`);
+            let modulus = firstNumber % lastNumber;
+            document.write(`<h3>Modulus (Remainder) of Two Numbers is :${division}</h3><hr>`);
+
+            let preincrement = ++firstNumber;           
+            document.write(`<h3>Pre-Increment of firstNumber is (1+50) :${preincrement}</h3><hr>`);
+
+            let postincrement = firstNumber++;           
+            document.write(`<h3>Post-Increment of firstNumber is (50+1) :${postincrement}</h3><hr>`);
+
+            let result1 = 50;                     
+            document.write(`<h3>Pre-Decrement of result1 is (1-50) :${--result1}</h3><hr>`);
+
+            let result2 = 50;                     
+            document.write(`<h3>Post-Decrement of result2 is (50-1) :${result2--}</h3><hr>`);
+            document.write(`<h3>Post-Decrement of result2 is (50-1) :${result2}</h3><hr>`);
+        </script>
+    </body>
+</html>

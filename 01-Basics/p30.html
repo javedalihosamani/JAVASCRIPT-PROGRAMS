@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1>Reminder of 2 numbers</h1>
+        </center>
+        <hr>
+
+        <button onclick="submitHandler()" type="button">Click to Calculate</button>
+        <div id="result"></div>
+
+        <script>
+            function submitHandler() {
+                let x = prompt('Enter input 1?');
+                let y = prompt('Enter input 2?');
+
+                console.log('x = ', x, '-', 'y =', y);
+
+                let res = Number(x) % Number(y);
+                // document.getElementById("result").innerHTML = `<h3>  Rem of x%y = ${res} </h3>`;
+                document.getElementById("result").innerHTML = "<h3>  Rem of x%y =" + res + "</h3>";
+            }
+        </script>
+    </body>
+</html>

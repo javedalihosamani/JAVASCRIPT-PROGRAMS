@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1>With Parameter and With Return Value..!</h1>
+        </center>
+        <hr>
+
+        <script>
+            function studDetails(firstName, lastName){
+
+                //let firstNumber =100.77;
+                document.write(`<p>First Paramaeter Value is :${firstName}</p>`);
+                document.write(`<p>Last Paramaeter Value is :${lastName}</p>`);
+
+                let fn, ln, fullName;
+
+                fn = firstName;
+                ln = lastName;
+
+                document.write(`<p>First Varaible Value is :${fn}</p>`);
+                document.write(`<p>Last Varaible Value is :${ln}</p>`);
+
+                fullName = fn  + " " +  ln;
+
+                return fullName;
+                document.write(`<p>Full Name variable Value is :${fullName}</p>`);
+            }
+            
+            document.write("With Parameter and With Return Value..!" ,studDetails("200", 100));
+        </script>
+    </body>
+</html>

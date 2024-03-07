@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1>DataType Conversions</h1>
+        </center>
+        <hr>
+
+        <script>
+            let str = "123";
+            document.write(typeof(str) +"<br>"); // Outputs: string
+
+            let num = new Number(str); // Becomes a number 123
+            document.write(typeof num +"<br>"); // Outputs: number
+
+            var number1 = Number("10.5" );
+            document.write(typeof(number1)+"<br>"); // Outputs: number
+
+            var x = "123.343";
+            var y = '1245.6420578654';
+            var z = 'Apple';
+
+            document.write(`<h3> X Data type is = ${ typeof(x) } </h3>`);
+            document.write(`<h3> Y Data type is = ${ typeof(y) } </h3>`);
+            document.write(`<h3> Z Data type is = ${ typeof(z) } </h3>`);
+
+            var a = Number(x); /* covert to any type into number */
+            document.write(`<h3> Number = ${ a } </h3>`);
+
+            var a1  = parseInt(x); // int values
+            document.write(`<h3> parseInt = ${ a1 } </h3>`);
+
+            var a2 = parseFloat(x); // Decimal Value
+            var a3 = parseFloat(y);
+
+            document.write(`<h3> parseFloat a2 = ${ a2 } </h3>`);
+            document.write(`<h3> parseFloat a3 = ${ a3 } </h3>`);
+
+            let yy = 1245.6770578654;
+            document.write(`<h3> Y variable value is  = ${ yy } </h3>`);
+
+            document.write(`<h3> Y variable value is  = ${ yy.toFixed() } </h3>`);
+            document.write(`<h3> Y variable value is  = ${ yy.toFixed(1) } </h3>`);
+            document.write(`<h3> Y variable value is  = ${ yy.toFixed(2) } </h3>`);
+            document.write(`<h3> Y variable value is  = ${ yy.toFixed(3) } </h3>`);
+            document.write(`<h3> Y variable value is  = ${ yy.toFixed(4) } </h3>`);
+
+            Number(true)  // returns 1
+            Number(false)  // returns 0
+            Number(null)  // returns 0
+            Number(" 123 ")  // returns 123
+            Number(" ")  // returns 0
+            Number("")  // returns 0
+            Number("123e-1")  // returns 12.3
+            Number("0xFF") // returns 255 (hexadecimal representation)
+            Number("undefined")  // returns NaN-> Not A Number
+            Number("null")  // returns NaN
+            Number("Hello World!")  // returns NaN
+        </script>
+    </body>
+</html>

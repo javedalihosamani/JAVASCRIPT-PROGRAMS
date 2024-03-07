@@ -1,0 +1,35 @@
+d:\Batches\Elite Batch 3PM\JS\01-Basics\p29.html<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1>SCOPES</h1>
+        </center>
+        <hr>
+
+        <script>
+            /*let always have local (block) scope*/
+
+			// errors => syntax errors (compile errors)
+			//  		 logical errors( run time errors) - Exceptions
+			// try catch block is used to handle run time errors (Exception Handling)
+
+            var x = 15;    
+
+            try {
+                if( x > 12) {
+                    let a = 156;
+                    document.write(`<h3>Local = ${ a } </h3>`); // block scope
+                }
+
+                document.write(`<h3> Global = ${ a } </h3>`); // global scope
+            } catch (error) {
+                console.log(error)
+            }
+        </script>
+    </body>
+</html>

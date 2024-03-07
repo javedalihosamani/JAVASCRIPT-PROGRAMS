@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1>JS-Variable..!</h1>
+        </center>
+        <hr>
+
+        <pre>
+            DATATYPE
+                1) Primitive Data Types
+                2) Non-Primitive/ Derived Data Types
+            1) PRIMITIVE Data Type 
+                - Int (Integer) -> It accept only round numbers Ex = 0-9
+                - Float ->  It accept decimal value Ex = 10.5
+                - Boolean -> Either TRUE or FALSE
+                - char -> It accept single character Ex= A
+                - void -> returns null value
+
+            2) Non-Primitive/ Derived Data Types
+                - Array
+                - Structure 
+                - Union
+                - Enum 
+                - Pointer 
+                - Function
+        </pre>
+        <hr>
+
+        <script>
+            // Var, let and const are the keywords, is used for to declare the variable.
+
+            var firstNumber;
+            document.write(firstNumber, "<br>");
+            document.write("<b>Without Value :</b>", firstNumber , "<br><hr>");
+
+            firstNumber = "Hello JS";
+            document.write("<b>With Value :</b>", firstNumber, "<br>");
+            document.write("<b>With Value :</b>"+ firstNumber+ "<br>");
+            document.write("<b>With Value :", firstNumber, "</b><br>");
+            document.write("<b>With Value :"+ firstNumber+ "</b><br>");
+            document.write("<b>With Value :"+ firstNumber, "</b><br>");
+            document.write(`<b>With value : ${firstNumber}</b><br>`)
+            document.write(`<b>TYPEOF METHOD : ${typeof(firstNumber)}</b><hr>`)
+
+            firstNumber = "A";
+            document.write("<b>With Value :</b>", firstNumber, "<br>");
+            document.write("<b>With Value :</b>"+ firstNumber+ "<br>");
+            document.write("<b>With Value :", firstNumber, "</b><br>");
+            document.write("<b>With Value :"+ firstNumber+ "</b><br>");
+            document.write("<b>With Value :"+ firstNumber, "</b><br>");
+            document.write(`<b>With value : ${firstNumber}</b><br>`)
+            document.write(`<b>TYPEOF METHOD : ${typeof(firstNumber)}</b><hr>`);
+
+            firstNumber = 1000;
+            document.write("<b>With Value :</b>", firstNumber, "<br>");
+            document.write("<b>With Value :</b>"+ firstNumber+ "<br>");
+            document.write("<b>With Value :", firstNumber, "</b><br>");
+            document.write("<b>With Value :"+ firstNumber+ "</b><br>");
+            document.write("<b>With Value :"+ firstNumber, "</b><br>");
+            document.write(`<b>With value : ${firstNumber}</b><br>`)
+            document.write(`<b>TYPEOF METHOD : ${typeof(firstNumber)}</b><hr>`);
+
+            firstNumber = 1000.8888;
+            document.write("<b>With Value :</b>", firstNumber, "<br>");
+            document.write("<b>With Value :</b>"+ firstNumber+ "<br>");
+            document.write("<b>With Value :", firstNumber, "</b><br>");
+            document.write("<b>With Value :"+ firstNumber+ "</b><br>");
+            document.write("<b>With Value :"+ firstNumber, "</b><br>");
+            document.write(`<b>With value : ${firstNumber}</b><br>`)
+            document.write(`<b>TYPEOF METHOD : ${typeof(firstNumber)}</b><hr>`);
+
+            firstNumber = true;
+            document.write("<b>With Value :</b>", firstNumber, "<br>");
+            document.write("<b>With Value :</b>"+ firstNumber+ "<br>");
+            document.write("<b>With Value :", firstNumber, "</b><br>");
+            document.write("<b>With Value :"+ firstNumber+ "</b><br>");
+            document.write("<b>With Value :"+ firstNumber, "</b><br>");
+            document.write(`<b>With value : ${firstNumber}</b><br>`)
+            document.write(`<b>TYPEOF METHOD : ${typeof(firstNumber)}</b><hr>`);
+
+            firstNumber = false;
+            document.write("<b>With Value :</b>", firstNumber, "<br>");
+            document.write("<b>With Value :</b>"+ firstNumber+ "<br>");
+            document.write("<b>With Value :", firstNumber, "</b><br>");
+            document.write("<b>With Value :"+ firstNumber+ "</b><br>");
+            document.write("<b>With Value :"+ firstNumber, "</b><br>");
+            document.write(`<b>With value : ${firstNumber}</b><br>`)
+            document.write(`<b>TYPEOF METHOD : ${typeof(firstNumber)}</b><hr>`)
+        </script>
+    </body>
+</html>

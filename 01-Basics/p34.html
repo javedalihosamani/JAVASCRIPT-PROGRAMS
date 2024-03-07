@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1>isFinite()</h1>
+        </center>
+        <hr>
+
+        <script>
+            document.write(`<h3> isFinite(123) = ${ isFinite(123) } </h3>`);
+            document.write(`<h3> isFinite(-12.33)= ${ isFinite(-12.33) } </h3>`);
+            document.write(`<h3> isFinite(12-3)  ${ isFinite(12-3) } </h3>`);
+            document.write(`<h3> isFinite(0) = ${ isFinite(0) } </h3>`);
+            document.write(`<h3>isFinite("123") = ${ isFinite("123") } </h3>`);
+            document.write(`<h3> isFinite(true) = ${ isFinite(true) } </h3>`);// true
+
+            document.write(`<h3> isFinite("be-practical") = ${ isFinite("be-practical") } </h3>`);//false
+            document.write(`<h3> isFinite("21/2/5") =  ${ isFinite("21/2/5") } </h3>`);//false
+            document.write(`<h3> isFinite("true") = ${ isFinite("true") } </h3>`);// false
+            document.write(`<h3> isFinite(0/0) = ${ isFinite(0/0) } </h3>`);// false
+            
+            document.write(`<h3> ${ Number(true) } </h3>`); // 1
+            document.write(`<h3> ${ Number(false) } </h3>`); // 0
+        </script>
+    </body>
+</html>

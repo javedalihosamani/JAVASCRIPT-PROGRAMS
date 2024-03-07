@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1> marks = 70-100(A) 50-70(B) 35-50(c) ==35(D) , Fail </h1>
+        </center>
+        <hr>
+        
+        <script>
+            var marks = 35;
+
+            if(marks >= 70 || marks == 100) {
+                document.write(`<h2>A Grade</h2>`);
+            } else if (marks > 50 || marks == 70) {
+                document.write(`<h2>B Grade</h2>`);
+            } else if (marks > 35 || marks == 50) {
+                document.write(`<h2>C Grade</h2>`);
+            } else if (marks === 35) {
+                document.write(`<h2>D Grade</h2>`);
+            } else {
+                document.write(`<h2>Fail</h2>`);
+            }
+        </script>
+    </body>
+</html>

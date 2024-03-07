@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+    </head>
+    <body>
+        <center>
+            <h1>ARRAY</h1>
+            <p>Collection of Data</p>
+        </center>
+        
+        <hr>
+
+        <h2>THERE ARE 3 TYPES OF ARRAY..!</h2>
+        <ol>
+            <li>
+                Literal Array = Single
+                <ol>
+                    <li>Literal</li>
+                    <li>Array Using Constructor</li>
+                    <li>Array Using Constructor Parameter</li>
+                </ol>
+            </li>
+            <li>Object Array</li>
+            <li>JSON Array</li>
+        </ol>
+
+        <hr>
+
+        <script>
+            // 1. literal array = single 
+
+                // 1.1 literal 
+                document.write(`<h3>Array Literal</h3>`);
+                let users = ['first', 'second', 'three', 100, true ];
+
+                // There are 5(Here count start from one) items(value) in an Array = n(Length of Array)
+                // Always Array start from 0 and 0 is an index(Position  of array Item) number
+                
+                document.write(`<h3>typeof(users) : ${typeof(users)}</h3>`);
+
+                document.write('users =', users, "<hr>");
+                console.log('users =', users);
+
+                // 1.2 array using constructor
+                document.write(`<h3>Array using Constructor</h3>`);
+                let emp = new Array();
+
+                emp[0] = "Raju";
+                emp[1] = "Jonh";
+                emp[2] = "Mary";
+                emp[3] = true;
+                emp[4] = 100;
+
+                document.write('emp =', emp, "<hr>");
+
+                // 1.3 array using constructor parameter
+                document.write(`<h3>Array using Constructor Parameter</h3>`);
+
+                let colours = new  Array("red", "blue", "green");
+
+                document.write(`<h3>typeof(colours) : ${typeof(colours)}</h3>`);
+
+                document.write('colours =', colours,"<hr>");
+                console.log('colours =', colours);
+
+            // 2. Object array
+            document.write(`<h3>Object Array </h3>`);
+
+            const employee = {
+                // key : value, => property
+                "firstName": "Angular",
+                "lastName":"React"
+            };
+
+            document.write('Object =', typeof(employee), '<br>');
+            document.write('employee =', employee, '<br>');
+
+            document.write('employee.firstName : ' ,employee.firstName, '<br>');
+            document.write('employee.lastName : ' ,employee.lastName, '<br>');
+
+            // 3. JSON array
+            document.write(`<h3>JSON Array </h3>`);
+
+            let empDetails = [
+                {
+                    "firsName":'Chethan',
+                    "lastName" : "Chintamani",
+                    "mobile" : 9876543210
+                },
+                {
+                    "firsName":'Namdan',
+                    "lastName" : "Hubli",
+                    "mobile" : 9876543211
+                }
+            ];
+
+            document.write('<p>JSON Array = ', typeof(empDetails), '</p>');
+            document.write(empDetails);
+            console.log(empDetails);
+        </script>
+    </body>
+</html>
