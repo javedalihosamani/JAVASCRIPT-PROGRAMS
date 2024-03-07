@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-EVENTS</title>
+    </head>
+    <body>
+        <center>
+            <h1>Onsubmit and Onreset (form events)</h1>
+        </center>
+        <hr>
+
+        <h3 id="out"></h3>
+
+        <form onsubmit="subHandler(event)" onreset="resetHandler()">
+            <label for="">Username</label>
+            <input type="text" name="user" id="user">
+            <br><br>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass">
+
+            <input type="checkbox" name="showPass" id="showPass"> 
+            <span id="txt">Show Password</span>
+            <br><br>
+
+            <button type="submit">Login</button>
+            <input type="reset" value="Reset">
+        </form>
+
+        <script>
+            function resetHandler(){
+                alert("On Reset Event..!");
+            }
+
+            function subHandler(event){
+                event.preventDefault(); // To avoid the page refresh
+
+                let user = document.getElementById("user").value;
+                let pass = document.getElementById("pass").value;
+
+                document.getElementById("out").innerText = `username = ${user} and password is ${pass}`;
+            }
+
+            document.getElementById("showPass").onclick = function(){
+                const pa = document.getElementById('pass');
+
+                if (pa.type === 'password') {
+                    pa.type = "text";
+                    document.getElementById("txt").innerText  = "Hide Password";
+                } else {
+                    pa.type = "password";
+                    document.getElementById("txt").innerText  = "Show Password";
+                }
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-EVENTS</title>
+    </head>
+    <body>
+        <center>
+            <h1>KEYBOARD EVENT</h1>
+        </center>
+        <hr>
+
+        <pre>
+            events
+            1) onkeypress => deprecated, will have one key of delay
+            2) onkeydown => will have one key of delay
+            3) onkeyup = no delay
+        </pre> 
+
+        <form action="">
+            <label for="">Enter Name</label>
+            <input type="text" name="name" id="name" onkeyup="getName();">
+        </form>
+
+        <h3 id="output"></h3>
+
+        <script>
+            function getName(){
+                let name = document.getElementById("name").value;
+                document.getElementById('output').innerHTML = name;
+            }
+        </script>
+    </body>
+</html>

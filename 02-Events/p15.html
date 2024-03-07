@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-EVENTS</title>
+    </head>
+    <body>
+        <center>
+            <h1>focusIn and focusOut</h1>
+        </center>
+        <hr>
+
+        <form action="" id="myForm"  onfocusin="addFocus(event)" onfocusout="removeFocus(event)">
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user" required>
+
+            <label for="pass">password</label>
+            <input type="password" name="pass" id="pass" required>
+        </form>
+
+        <script>
+            function addFocus(event){
+                console.log(event);
+                event.target.style.background = "#ff33ff";
+                event.target.style.borderColor = "#34ff44";
+                event.target.style.outlineColor = "#34ff44";
+            }
+            function removeFocus(event){
+                event.target.style.background = "#ccc";
+                event.target.style.borderColor = "#ff2200";
+                event.target.style.outlineColor = "#ff2200";
+            }
+        </script>
+    </body>
+</html>

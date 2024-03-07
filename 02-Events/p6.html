@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-EVENTS</title>
+        <style>
+            div{
+                background-color: teal;
+                color:#fff;
+                padding:12px;
+                width: 50%;
+                height: 500px;
+                overflow: auto;
+            }
+            h4{
+                padding: 10px;
+                background-color: crimson;
+                color:#fff;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>onmousewheel() and onscroll() </h1>
+        </center>
+
+        <h4 id="output"></h4>
+
+        <div id="txt" onscroll="wheelHandler();" onmousewheel="wheelHandler()">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatum minima ea quod porro iusto, doloribus sint sit sunt id exercitationem repudiandae soluta nemo suscipit, in obcaecati autem cupiditate quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aliquid aliquam voluptates eaque temporibus quia expedita consequatur sed, iste, tempore beatae quasi ex deserunt? Impedit asperiores dolor reiciendis ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolorum quis molestiae dolor suscipit molestias repudiandae maxime magni omnis a aut, fugiat commodi illum corrupti alias ex beatae quae nemo?</p>
+        </div>
+
+        <script>
+            function wheelHandler(){
+                document.getElementById("output").innerHTML = document.getElementById("txt").scrollTop + " px";
+            }
+        </script>
+    </body>
+</html>
