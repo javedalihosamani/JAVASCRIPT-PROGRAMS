@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+        <style>
+            section{
+                background-color: lightgray;
+                padding: 20px;
+            }
+            .box {
+                width: 160px;
+                height: 50px;
+                background-color: #44ff33;
+                margin: 10px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>Query Selector All</h1>
+        </center>
+        <hr>
+
+        <section>
+            <div id="1" class="box">
+                <p>box-1</p>
+                <input type="checkbox" name="box1" id="box1" value="box-1">
+            </div>
+            <div id="2" class="box">
+                <p>box-2</p>
+                <input type="checkbox" name="box2" id="box2" value="box-2">
+            </div>
+            <div id="3" class="box">
+                <p>box-3</p>
+                <input type="checkbox" name="box3" id="box3" value="box-3">
+            </div>
+            <div id="4" class="box">
+                <p>box-4</p>
+                <input type="checkbox" name="box4" id="box4" value="box-4">
+            </div>            
+        </section>
+
+        <script>
+            let selBox = document.querySelector("section");
+            let selectedData = [];
+
+            selBox.addEventListener('click', function(){
+                console.log(`Selected Item = ${event.target}`);
+
+                if (event.target.type == 'checkbox') {
+                    let checked = document.querySelectorAll('input[type="checkbox"]:checked');
+                    console.log('CHECKED =', checked)
+                    console.log(typeof checked)
+                    selectedData = Array.from(checked).map(x => x.value);
+                    console.log('selected Data =', selectedData);
+                }
+            });
+        </script>
+    </body>
+</html>

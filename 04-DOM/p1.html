@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+    </head>
+    <body>
+        <section id="block"></section>
+
+        <script>
+            document.write(`<h1>Welcome to javascript</h1>`);
+            document.getElementById("block").innerHTML = `<h1>Custom Location Text</h1>`;
+            document.getElementById("block").style.backgroundColor = 'green';
+            document.getElementById('block').style.color = '#fff';
+            document.getElementById('block').style.padding = '20px';
+            document.getElementById('block').style.textAlign = 'center';
+        </script>
+    </body>
+</html>

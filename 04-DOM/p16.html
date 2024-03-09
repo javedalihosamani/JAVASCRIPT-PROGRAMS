@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+    </head>
+    <body>
+        <center>
+            <h1>window.close() and window.open()</h1>
+        </center>
+        <hr>
+
+        <button type="button" onclick="openHandler()">Open</button>
+        <button type="button" onclick="closeHandler()">Close</button>
+
+        <script>
+            var webStats;
+
+            function openHandler() {
+                webStats = open('https://github.com'); // to open in new tab
+            }
+
+            function closeHandler() {
+                console.log('webStats =', webStats);
+                webStats.close();
+            }
+        </script>
+    </body>
+</html>

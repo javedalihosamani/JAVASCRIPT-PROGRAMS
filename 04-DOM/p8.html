@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+    </head>
+    <body>
+        <center>
+            <h1>DOM</h1>
+        </center>
+        <hr>
+
+        <p>This is a paragraph of text.</p>
+        <div class="test">This is DIV of text.</div>
+        <p>This is one more paragraph of text.</p>
+
+        <script>
+            try {
+                document.write("<p>This is JS Paragraph..!</p>");
+
+                let matches = document.getElementsByTagName("p");
+                console.log(matches);
+                console.log(typeof matches);
+
+                for (let index = 0; index < matches.length; index++) {
+                    matches[index].style.backgroundColor = "red";
+                }
+
+                for (const key in matches) {
+                matches[key].style.color = "#fff";
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        </script>
+    </body>
+</html>
