@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BOM</title>
+    </head>
+    <body>
+        <center>
+            <h1>BOM DIALOG BOX</h1>
+        </center>
+        <hr>
+
+        <script>
+            var message = "Hi there! Click to continue.";
+            alert(message);
+
+            var result = confirm("Are you sure?");
+            if(result) {
+                document.write("You clicked OK button!");
+            } else {
+                document.write("You clicked Cancel button!");
+            }
+
+            var name = prompt("What's your name?");
+            if (name.length > 0 && name != "null") {
+                document.write("Hi, " + name);
+            } else {
+                document.write("Anonymous!");
+            }
+        </script>
+    </body>
+</html>
