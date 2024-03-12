@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h2>24) valueOf();</h2>
+            <p>The valueOf() method returns the array itself, and this method does not change the original array.</p>
+            <p>fruits.valueOf() returns the same as fruits</p>
+        </center>
+        <hr>
+
+        <p><b>SYNATX :</b></p>
+        <pre>
+            array.valueOf();
+        </pre>
+        <hr>
+
+        <script>
+            // Coy two array elements to the last two array elements
+            let fruits = ['Banana', 'Orange', 'Apple', "Mango"];
+
+            document.write(`<p>Before the result of Array.valueOf() : ${fruits}</p>`);   
+
+            let myArray = fruits.valueOf();
+
+            document.write(`<p>Before the result of Array.valueOf() : ${myArray}</p>`);
+
+            let myArray_1 = fruits;
+
+            document.write(`<p>myArray_1  result : ${myArray_1}</p>`);
+        </script>
+    </body>
+</html>

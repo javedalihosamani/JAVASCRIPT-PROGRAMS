@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h2>6) unshift()</h2>
+            <p>The unshift() adds element to begging and return new array length.</p>
+        </center>
+        <hr>
+
+        <p><b>SYNTAX : </b></p>
+    
+        <pre>
+            array.unshift(item1, item2,....., itemx);
+        </pre>
+        <hr>
+
+        <script>
+            let bikes = ["Yamaha", 'Bajaj', "honda", "TVS"];
+
+            document.write(`<p>Before Array.unshift() : ${bikes}</p>`);
+            document.write(`<p>Array.unshift() : ${bikes.unshift("BMW", "Kawasaki")}</p>`);
+            document.write(`<p>After Array.unshift() : ${bikes}</p>`);
+        </script>
+    </body>
+</html>

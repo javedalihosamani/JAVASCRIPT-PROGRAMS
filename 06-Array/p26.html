@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h1>ARRAY METHODS PART - 5</h1>
+        </center>
+        <hr>
+
+        <center>
+            <h2>25) forEach();</h2>
+            <p>The forEach() mthods executes a provided function once for each array elements, and this method is not executed for empty elements.</p>
+            
+        </center>
+        <hr>
+
+        <p><b>SYNATX :</b></p>
+        <pre>
+            array.forEach(function(parameter){ });
+        </pre>
+        <hr>
+
+        <script>
+            let numbers = [65, 44, 12, 4];
+
+            numbers.forEach(function(item){ 
+                document.write(`<p>Array.forEach(function(parameter){ }) : ${item * 10}</p>`);
+            });            
+        </script>
+    </body>
+</html>

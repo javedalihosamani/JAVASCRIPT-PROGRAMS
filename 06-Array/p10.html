@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h2>9) sort();</h2>
+            <p>The sort() sorts the elements of an array and overwrites the original array.</p>
+            <p>Sorts the elements as strings in alphabetetical and ascending order.</p>
+        </center>
+
+        <hr>
+
+        <p><b>SYNTAX : </b></p>
+
+        <pre>
+            array.sort(compareFunction);
+        </pre>
+
+        <hr>
+
+        <script>
+            let ary = [99,32,23,43,53];
+            let str = ['Zebra', 'Year', 'Van', 'Apple'];
+
+            document.write(`<p>Default Array Result : ${ary}</p>`);
+
+            ary.sort();
+            document.write(`<p>After SORT : ${ary}</p>`);
+
+            document.write(`<p>Default Array Result : ${str}</p>`);
+            
+            str.sort();
+            document.write(`<p>After SORT : ${str}</p>`);
+        </script>
+    </body>
+</html>

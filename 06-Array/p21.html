@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h2>20) every();</h2>
+            <p>The every() method tests whether all elements in the array pass the test implemented by the provided function.</p>
+            <p>It returns a Boolean Value.</p>
+        </center>
+        <hr>
+
+        <p><b>SYNATX :</b></p>
+        <pre>
+            array.every((element)=>{});
+        </pre>
+        <hr>
+
+        <script>
+            let array1 = [1, 30, 39, 29, 10, 13];
+
+            const isBelow_1 = (currentValue) => currentValue < 40; 
+
+            document.write(`<p>Array.every() : ${array1.every(isBelow_1)}</p>`);   
+
+            const isBelow_2 = (currentValue) => currentValue < 30; 
+
+            document.write(`<p>Array.every() : ${array1.every(isBelow_2)}</p>`);  
+        </script>
+    </body>
+</html>

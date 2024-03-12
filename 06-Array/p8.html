@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h1>ARRAY METHODS PART - 2</h1>
+        </center>
+        <hr>
+        <center>
+            <h2>7) delete(operator)</h2>
+            <p>Array elements can be deleted using the Javascript operator delete.</p>
+            <p>Using delete leaves undefined holes in the array.</p>
+        </center>
+        <hr>
+
+        <p><b>SYNTAX : </b></p>
+    
+        <pre>
+            delete array[index]
+        </pre>
+        <hr>
+
+        <script>
+            let bikes = ["Yamaha", 'Bajaj', "honda", "TVS"];
+
+            document.write(`<p>Before Delete Array : ${bikes}</p>`);
+            document.write(`<p>Delete Array : ${delete bikes[1]}</p>`);
+            document.write(`<p>After Delete Array : ${bikes}</p>`);
+            document.write(`<p>Array.length : ${bikes.length}</p>`);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h1>ARRAY METHODS PART - 4</h1>
+        </center>
+        <hr>
+
+        <center>
+            <h2>19) entries();</h2>
+            <p>The entries() method returns an array Iterator object whith key/value pairs.</p>
+            <p>And this method do es not changes the original array</p>
+        </center>
+        <hr>
+
+        <p><b>SYNATX :</b></p>
+        <pre>
+            array.entries();
+        </pre>
+        <hr>
+
+        <script>
+            let days = ["Sun", 'Mon', "Tue", "Wed", "Thur", "Fri", "Sat"];
+
+            document.write(`<p>Array.entries() : ${days.entries()}</p>`);
+
+            for (const iterator of days) {
+                document.write(`<p>Array.entries() : ${iterator}</p>`);   
+            }
+        </script>
+    </body>
+</html>

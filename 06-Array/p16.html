@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h2>15) lastindexOf();</h2>
+            <p>The lastindexOf() method returns the last index(position) of a specified value, returns -1 if the value is not found and start a specified index and searches from right to left.</p>
+            <p>Negative start values counts from the last element (but still searches from right to left)</p>
+        </center>
+
+        <hr>
+
+        <p><b>SYNTAX : </b></p>
+
+        <pre>
+            1) array.lastindexOf();
+        </pre>
+
+        <hr>
+
+        <script>
+            let p = ["pooja","karo","pooja","khush ho jaye"];
+            
+
+            document.write(`<p>FIRST RESULT</p>`); 
+            document.write(`<p>Result One : ${p.lastIndexOf("pooja")}</p>`); // Prints: 2
+        </script>
+    </body>
+</html>

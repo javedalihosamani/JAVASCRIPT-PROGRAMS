@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h2>8) concat();</h2>
+            <p>The concat() concatenates (join) two or more array. Returns a new array. Containing the join arrays.</p>
+            <p>This method does not change the existing arrays</p>
+        </center>
+
+        <hr>
+
+        <p><b>SYNTAX : </b></p>
+
+        <pre>
+            array1.concat(array2, array3, ..., arrayX);
+        </pre>
+
+        <hr>
+
+        <script>
+            let ary1 = [1,2,3];
+            let ary2 = [11,22,33];
+            let ary3 = [111,222,333];
+
+            let ary_new = ary1.concat(ary2, ary3);
+            document.write(`<p>Array.concat() : ${ary_new}</p>`);
+        </script>
+    </body>
+</html>

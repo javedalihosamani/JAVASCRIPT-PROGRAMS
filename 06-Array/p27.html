@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h1>ARRAY METHODS PART - 5</h1>
+        </center>
+        <hr>
+
+        <center>
+            <h2>26) filter();</h2>
+            <p>The filter() mthods creates a new array filled with elements that pass a test provided by a a funtion, and this method does ot change the original array.</p>
+            
+        </center>
+        <hr>
+
+        <p><b>SYNATX :</b></p>
+        <pre>
+            array.filter(function(parameter){ });
+        </pre>
+        <hr>
+
+        <script>
+            let age = [32, 33, 16, 40];
+
+            function checkAdult(age){
+                return age >= 18;
+            }
+            
+            document.write(`<p>Array.filter(function(parameter){ }) : ${age.filter(checkAdult)}</p>`); 
+                     
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h2>17) findIndex();</h2>
+            <p>The findIndex() method returns the first index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function , then -1 is returned</p>
+        </center>
+
+        <hr>
+
+        <p><b>SYNTAX : </b></p>
+
+        <pre>
+            array.findIndex(function(currentValue, index, arr), thisValues);
+        </pre>
+
+        <hr>
+
+        <script>
+            let arry = [5,12,8,130,44];
+            
+           document.write(`<p>RESULT : ${arry.findIndex((element) => element > 13)}</p>`); 
+        </script>
+    </body>
+</html>

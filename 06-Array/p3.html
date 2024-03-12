@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h2>2) join();</h2>
+            <p>The join() returns a new string by concatenating all of the elements in an array. Separated by commas or a specified separator string.</p>
+        </center>
+        <hr>
+
+        <p><b>SYNTAX :</b></p>
+        <pre>
+            array.join(separator);
+        </pre>
+        <hr>
+
+        <script>
+            let bikes = ["Yamaha", 'Bajaj', "honda", "TVS"];
+
+            document.write(`<p>Array.join() : ${bikes.join()}</p>`);
+            document.write(`<p>Array.join("") : ${bikes.join(" ")}</p>`);
+            document.write(`<p>Array.join(" - ") : ${bikes.join(' - ')}</p>`);
+        </script>
+    </body>
+</html>

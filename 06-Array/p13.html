@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h2>12) reverse();</h2>
+            <p>The reverse() method reverse the order of the elements in an array and this method overwrites the original array.</p>
+        </center>
+
+        <hr>
+
+        <p><b>SYNTAX : </b></p>
+
+        <pre>
+            array.reverse();
+        </pre>
+
+        <hr>
+
+        <script>
+            let numbers = [1,2,3,5,6];
+            let string = ['A','B','C','D','E'];
+
+            document.write(`<p>Before REVERSE() : ${numbers}</p>`);
+            document.write(`<p>Before REVERSE() : ${string}</p>`);
+
+            numbers.reverse();
+            string.reverse();
+
+            document.write(`<p>After REVERSE() : ${numbers}</p>`);
+            document.write(`<p>After REVERSE() : ${string}</p>`);
+        </script>
+    </body>
+</html>

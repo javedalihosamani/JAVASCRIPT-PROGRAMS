@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARRAY</title>
+    </head>
+    <body>
+        <center>
+            <h1>ARRAY</h1>
+            <p>Collections of data.</p>
+        </center>
+
+        <hr>
+
+        <h2>By Array Literal</h2>
+        <hr>
+        <script>
+            let fruits = ["Apple","Banana","Mango","Orange","Papaya",1000];
+
+            document.write(typeof(fruits)+"<br>");
+            document.write(fruits + "<br>");
+            document.write("<hr>");
+
+            document.write("Friuts Lenth = ", fruits.length + "<br>");
+            document.write("First Index Value = ",fruits[0] + "<br>");
+            document.write("Second Index Value = ",fruits[1] + "<br>");
+            document.write("<hr>");
+
+            for (let index = 0; index < fruits.length; index++) {
+                document.write(fruits[index] + "<br>");    
+            }
+        </script>
+
+        <hr>
+        <center>
+            <h1>By creating instance of Array Object or Constructor directly (using new keyword)</h1>
+        </center>
+        <hr>
+
+        <script>
+            let empName = new Array();
+            document.write("empName = ",typeof(empName), "<br>");
+
+            empName[0] = "Nandan";
+            empName[1] = "Arun";
+            empName[2] = "Yashwanth";
+            empName[3] = "Aamir";
+            empName[4] = "Nanjundeshwar";
+            empName[5] = "Anjaneya";
+            empName[6] = "Pavithra";
+            empName[7] = "Asha";
+
+            for (let index = 0; index < empName.length; index++) {
+                document.write(empName[index] + "<br>");
+            }
+        </script>
+
+        <hr>
+        <center>
+            <h1>By using an Array object constructor parameter (using new keyword)</h1>
+        </center>
+        <hr>
+
+        <script>
+            let studentInfo = new Array("Ak","PK","KHAKE","SOKE");
+
+            for (let index = 0; index < studentInfo.length; index++) {
+                document.write(studentInfo[index] + "<br>");                
+            }
+        </script>
+    </body>
+</html>
