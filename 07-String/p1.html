@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STRING</title>
+    </head>
+    <body>
+        <center>
+            <h1>STRING</h1>
+            <p>Collections of data.</p>
+        </center>
+        <hr>
+
+        <h2>STRING LITERAL</h2>
+        <hr>
+        <script>
+            let str1 = 'WELCOME TO STRING..!';
+            document.write('STR1 :', str1 , '<br>');
+            document.write('TYPEOF(STR1) :', typeof(str1), '<br>');
+
+            document.write(`<p>STR1.LENGTH : ${str1.length}</p>`)
+
+            for (let index = 0; index < str1.length; index++) {
+                document.write(str1[index], "<br>");
+            }
+        </script>
+
+        <hr>
+        <center>
+            <h1>By creating instance of STRING Object directly (using new keyword)</h1>
+        </center>
+        <hr>
+
+        <script>
+            let str2 = new String();
+            str2[0] = 'A';
+            str2[10] = 'B';
+
+            document.write(`<p>CONSTRUCTOR STRING OBJECT : ${str2[0]}</p>`);
+            document.write(`<p>CONSTRUCTOR STRING OBJECT : ${str2[10]}</p>`);
+
+            str2 = "Creating instance of STRING Object directly (using new keyword)";
+            document.write(`<p>CONSTRUCTOR STRING OBJECT : ${str2}</p>`);
+        </script>
+
+        <hr>
+        <center>
+            <h1>By using an SRING object constructor (using new keyword)</h1>
+        </center>
+        <hr>
+
+        <script>
+            let str3 = new String("By using an SRING object constructor (using new keyword)");
+            document.write(`<p>PARAMETER CONSTRUCTOR STRING OBJECT : ${str3}</p>`);
+        </script>
+    </body>
+</html>
