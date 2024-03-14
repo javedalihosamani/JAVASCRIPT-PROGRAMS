@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>CLASS</h1>
+            <h3>Class ES-6 -> group of Objects (State & Behaviour)</h3>
+            <p>State => variables, Objects -> properties </p>
+            <p>Behaviour -> methods, functions </p>
+        </center>
+        <hr>
+
+        <h3>Class syntax contains two components</h3>
+        <ol>
+            <li>Class Declarations</li>
+            <li>Class Expressions</li>
+        </ol>
+        <hr>
+
+        <script>
+            document.write(`<h1>Class Declarations</h1>`);
+
+            class Test{
+                constructor(){
+                    document.write('<h1>WELCOME TO TEST CLASS</h1>');
+                }
+            }
+           let test = new Test();
+
+           class Student1{
+                constructor(){}
+                getBepractical(){
+                    let text = "THIS IS A getBepractical METHOD..!";
+                    document.write(`<h1>${text}</h1>`);
+                }
+            }
+            let student1 = new Student1();
+            student1.getBepractical();
+        </script>
+    </body>
+</html>

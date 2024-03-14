@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OOJS</title>
+    </head>
+    <body>
+        <center>
+            <h1>super key</h1>
+        </center>
+        <hr>
+        
+        <script>
+            class Company {
+                constructor(x,y) {
+                    this.empId = x;
+                    this.empDes = y;
+                }
+                getEmpInfo() {
+                    document.write(`<h1> Employee id = ${this.empId} & designation = ${this.empDes} </h1>`)
+                }
+            }
+
+            class Emp extends Company{
+                constructor(na,em,id,de) {
+                    super(id,de);
+                    this.name = na;
+                    this.email = em;
+                }
+
+                getEmpInfo() {
+                    super.getEmpInfo();
+                    document.write(`<h1> Name is = ${this.name} & email = ${this.email} </h1>`);
+                }
+            }
+
+            let x = new Emp('John', 'john@gmail.com',3234,'Backend Developer')
+            x.getEmpInfo()
+        </script>
+    </body>
+</html>

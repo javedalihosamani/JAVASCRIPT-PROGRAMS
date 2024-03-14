@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OOJS</title>
+    </head>
+    <body>
+        <center>
+            <h1>Object.freeze()</h1>
+        </center>
+        <hr>
+
+        <script>
+            const user = {
+                name: "ramu",
+                email: "ramu@gmail.com",
+                age: 24
+            };
+
+            Object.defineProperty(user,"mobile",{
+                value: "9900008877",
+                writable: true
+            });
+
+            console.log('before user =', user);
+
+            Object.freeze(user);
+
+            user.name = "Naveen";
+            user.mobile = "8899778877";
+
+            console.log('after freeze =', user);   
+        </script>
+    </body>
+</html>

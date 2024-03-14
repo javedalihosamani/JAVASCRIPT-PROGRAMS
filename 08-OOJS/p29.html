@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OOJS</title>
+    </head>
+    <body>
+        <center>
+            <h1>CLASS ES-6</h1>
+        </center>
+        <hr>
+
+        <script>
+            // class => group of objects
+            // objects => group of state (variables) and behaviours (methods)
+
+            class User{
+                constructor(){
+                    this.name = "Mohan";
+                    this.email = "mohan@gmail.com";
+                    this.age = 123;
+                    this.isAdmin = true;
+                    this.hobbies = ['trekking', 'cycling', 'riding'],
+                    this.account = {
+                        bank: "SBI",
+                        accNo: 12335
+                    }
+                }
+
+                getUserInfo() {
+                    return this.name; // Mohan
+                }
+
+                getEmail() {
+                    document.write(`<h3> my email is = ${this.email} </h3>`); // mohan@gmail.com
+                }
+            }
+
+            let x = new User();
+
+            console.log('x = ', x);
+
+            document.write(`<h1> name = ${x.name} </h1>`);
+            document.write(`<h1> email = ${x.email} </h1>`);
+            document.write(`<h1> age = ${x.age} </h1>`);
+            document.write(`<h1> isAdmin = ${x.isAdmin} </h1>`);
+
+            document.write(`<h1> method getUserInfo = ${x.getUserInfo()} </h1>`);
+
+            x.getEmail();
+            
+            document.write(`<h3>x.hobbies : ${typeof(x.hobbies)}</h3>`);
+
+            x.hobbies.forEach(function(item, index){
+                document.write(`<p> ${index} ${item} </p>`);
+            });
+
+            document.write(`<h1> Bank Name = ${x.account.bank} </h1>`);
+            document.write(`<h1> Account number = ${x.account.accNo} </h1>`);
+        </script>
+    </body>
+</html>

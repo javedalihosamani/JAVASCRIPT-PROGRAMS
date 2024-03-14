@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OOJS</title>
+    </head>
+    <body>
+        <center>
+            <h1>Object methods</h1>
+        </center>
+        <hr>
+
+        <script>
+            // Object Constructor
+            // Object.create -> copy or clone one object prototype in another object
+            
+            const user = {
+                name: "Raj",
+                email: "raj@gmail.com",
+                mobile: "9966884455",
+                age: 25
+            };
+
+            console.log('user =', user);
+
+            let user1 = Object.create(user);
+            console.log('user1 =', user1);
+            console.log('typeof user1 =',typeof user1);
+        </script>
+    </body>
+</html>

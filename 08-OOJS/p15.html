@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OOJS</title>
+    </head>
+    <body>
+        <center>
+            <h1>Write protect the values</h1>
+        </center>
+        <hr>
+
+        <script>
+            var user = {
+                email: "john@gmail.com"
+            };
+
+            Object.defineProperty(user, 'name',{
+                value:'Johny',
+                writable: false  // true -> writable , false -> readable (write protect) (default)
+            });
+
+            console.log('BEOFRE = ', user);
+            console.log(user.name);
+
+            user.name = 'SONY';
+
+            console.log('AFTER = ',user);
+            console.log(user.name);
+        </script>
+    </body>
+</html>

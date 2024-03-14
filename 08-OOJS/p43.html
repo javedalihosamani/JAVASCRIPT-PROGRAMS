@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OOJS</title>
+    </head>
+    <body>
+        <center>
+            <h1>Private members inside the class</h1>
+        </center>
+        <hr>
+
+        <script>
+            class Company{
+                constructor(){
+                    const emp = []; // Private Member
+
+                    // setter method
+                    this.addEmp = function(val){
+                        emp.push(val);
+                        return emp;
+                    }
+
+                    // getter method
+                    this.getEmp = function () {
+                        return emp.shift();
+                    }
+                }
+            }
+
+            let x = new Company();
+            console.log('instance x = ', x);
+
+            // public members to add values
+            x.addEmp('Johny');
+            x.addEmp('Robert');
+            x.addEmp('Micheal');
+
+            console.log('first =', x.addEmp());
+
+            // public member to read values
+            console.log('first =', x.getEmp());
+            console.log('second =', x.getEmp());
+            console.log('third =', x.getEmp());
+
+            console.log('first =', x.addEmp());
+        </script>
+    </body>
+</html>

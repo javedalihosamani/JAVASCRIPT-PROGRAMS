@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OOJS</title>
+    </head>
+    <body>
+        <center>
+            <h1>Object property destucture using loop</h1>
+        </center>
+        <hr>
+        
+        <script>
+            const user = {
+                name: "Raj",
+                email: "raj@gmail.com",
+                mobile: "9966884455",
+                age: 25
+            };
+            console.log(user.age)
+            console.log(user['age'])
+
+            // for ... in
+            for(let item in user) {
+                document.write(`<h3> ${item} : ${ user[item]} </h3>`);
+            }
+        </script>
+    </body>
+</html>
