@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ADVANCED</title>
+    </head>
+    <body>
+        <center>
+            <h1>Generator Function</h1>
+        </center>
+        <hr>
+
+        <h2>JAVASCRIPT FUNCTIONS</h2>
+        <p>1) Local Function = function A(){}</p>
+        <p>2) Expression Function = let A =  function(){}</p>
+        <p>3) Arrow Function = let A () => {}</p>
+        <p>4) CallBack Function = forEach(function(item){});</p>
+        <p>5) Closer Function = function A(){ function B(){} B();}</p>
+        <p>6) Anonymous Function or Immediate execution of a function= ()();</p>
+        <p>7) Lambda Function = A = (x) => 100 + x; </p>
+        <p>8) Generator Function = function* A(){ yield "A"; yield "B"}</p>
+        <hr>
+
+        <script>
+            function A(){
+                let a=10, b=20, sum;
+                sum = a + b; // 30
+
+                return sum; //30
+                return a; // 10
+                console.log(sum);
+            }
+           document.write(A());
+
+           function* users(){
+                
+                // yield is kind of like return
+                // return x returns the value of x , but yield x returns a function, 
+
+                yield "Raju";
+                yield "mahesh";
+                yield "Ranjitha";
+                yield "savitha";
+                yield "venkatesh";
+            }
+           
+           console.log('USERS FUNCTION = ', users())
+           console.log('USERS TYPEOF = ', typeof(users()))
+
+            for(let item of users()){
+                document.write(`<h3> ${item} </h3>`);
+            }
+        </script>
+    </body>
+</html>

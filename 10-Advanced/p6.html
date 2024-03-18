@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ADVANCED</title>
+    </head>
+    <body>
+        <center>
+            <h1>addEventListener METHOD</h1>
+            <p>This method is used for manage one or more than one event.</p>
+        </center>
+        <hr>
+
+        <h2>SYNTAX</h2>
+        <pre>
+            addEventListener('Event name', event Listener);
+        </pre>
+
+        <button type="button" onclick="firstFunction()">Function 1</button>
+        <button type="button" onclick="secondFunction()">Function 2</button>
+
+        <button type="button" id="btn1">Without Event Listener</button>
+        <button type="button" id="btn2">With Event Listener</button>
+
+        <script>
+            function firstFunction(){
+                alert("First Function..!");
+            }
+                
+            function secondFunction(){
+                alert("Second Function..!");
+            }
+
+            let btn1 = document.getElementById('btn1');
+            btn1.onclick = firstFunction;
+            btn1.onclick = secondFunction;
+
+            let btn2 = document.getElementById('btn2');
+            btn2.addEventListener('click', firstFunction);
+            btn2.addEventListener('click', secondFunction);
+        </script>
+    </body>
+</html>

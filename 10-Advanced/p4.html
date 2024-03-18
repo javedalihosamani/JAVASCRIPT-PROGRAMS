@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ADVANCED</title>
+    </head>
+    <body>
+        <center>
+            <h1>Lambda functions</h1>
+        </center>
+        <hr>
+
+        <h2>JAVASCRIPT FUNCTIONS</h2>
+        <p>1) Local Function = function A(){}</p>
+        <p>2) Expression Function = let A =  function(){}</p>
+        <p>3) Arrow Function = let A () => {}</p>
+        <p>4) CallBack Function = forEach(function(item){});</p>
+        <p>5) Closer Function = function A(){ function B(){} B();}</p>
+        <p>6) Anonymous Function or Immediate execution of a function= ()();</p>
+        <p>7) Lambda Function = A = (x) => 100 + x; </p>
+
+        <script>
+            // (params) => statement
+
+            //function A(){return 10+20;} documwnt.write(A())
+
+            let sum = (x) => 100 + x;
+
+            document.write(`<h1> sum = ${ sum(20) } </h1>`);
+        </script>
+    </body>
+</html>
