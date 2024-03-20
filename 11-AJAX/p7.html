@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AJAX</title>
+        <style>
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            div {
+                width: 250px;
+                padding: 10px;
+                border: 1px solid #222;
+                margin: 5px;
+            }
+
+            div img {
+                max-width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Fetch method</h3>
+
+        <!-- real dom -->
+        <section id="container"></section>
+
+        <script>
+            const url = "https://dummyjson.com";
+
+                fetch(`${url}/products`, {
+                    method: "GET"
+                }).then(out => out.json()).then(res => {
+                    console.log('response =', res.products);
+                    printData(res.products);
+                }).catch(err => {
+                    console.log(err);
+                });
+
+                function printData(products) {
+                    let container= document.querySelector('#container');
+                    //virtual DOM
+                    products.forEach(item => {
+                        // used to create html tags through js
+                        let card = document.createElement('div');
+                        
+                        let title = document.createElement('h4');
+                        let price = document.createElement('p');
+                        let image = document.createElement('img');
+
+                        title.textContent = item.title;
+                        image.src = item.thumbnail;
+                        price.innerHTML = `<strong>Price = &#8377; ${item.price}</strong>`;
+
+                        card.appendChild(title);
+                        card.appendChild(image);
+                        card.appendChild(price);
+
+                        container.appendChild(card);
+                    });
+                }
+
+        </script>
+    </body>
+</html>
