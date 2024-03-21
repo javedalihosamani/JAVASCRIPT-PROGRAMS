@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Spread (...) operator with Math Constructor</h1>
+        </center>
+
+        <hr>
+
+        <!-- receive an array return as parameters -->
+
+        <script>
+            var num = [44,455,56,11,77,99,900];
+            console.log('num = ', num);
+            console.log('parameters (Spread) = ', ...num);
+
+            document.write(`<h3> Max = ${ Math.max(num) } </h3>`);// NaN
+            document.write(`<h3> Max = ${ Math.max([44,455,56,11,77,99,900]) } </h3>`); // NaN
+
+            document.write(`<h3> Max = ${ Math.max(...num) } </h3>`); // array into parameters 
+            document.write(`<h3> Min = ${ Math.min(44,455,56,11,77,99,900) } </h3>`); // 11
+        </script>
+    </body>
+</html>

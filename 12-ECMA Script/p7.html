@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>for...of loop</h1>
+        </center>
+        <hr>
+
+        <script>
+            /* SYNTEX-1
+             for (let index = 0; index < array.length; index++) {
+                document.write(array[index]);
+                
+            } */
+           /*  SYNTEX-2
+            for (const key in object) {
+                document.write(key);
+            } */
+            
+            
+            var colors = ['blue','red','green']; // array
+
+            // for(let ref of array)
+
+            for(let item of colors) {
+                document.write(`<h3> ${ item } </h3>`);
+            }
+
+            // array.forEach(function(ref){
+            //     document.write(`<h3> ${ref} </h3>`);
+            // });
+
+            var title = "be-practical";// string
+
+            for(let item of title) {
+                document.write(`<p> ${ item } </p>`);
+            }
+        </script>
+    </body>
+</html>

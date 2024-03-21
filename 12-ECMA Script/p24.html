@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Deleting properties </h1>
+        </center>
+        <script>
+            var x = new Object();
+
+            x.name = "Tata Nexon";
+            x.model = 2021;
+            x.color = "red";
+
+            console.log("before delete x =", x);
+
+            delete x.model;
+            delete x.name;
+            delete x.color;
+
+            console.log('after delete x =', x);
+        </script>
+    </body>
+</html>

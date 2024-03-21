@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Object.defineProperty()</h1>
+        </center>
+        <hr>
+
+        <script>
+            "use strict"; // to enable strict mode
+
+            var user  = {};
+
+            console.log('before=',user);
+
+            Object.defineProperty(user,"name", {
+             value: "Naveen",
+             writable: false  // throw type error in strict mode
+            });
+
+            try {
+                user.name = "Suma"; // assignment 
+            } catch(err) {
+                console.log(err)
+            }
+
+            console.log('after =', user);
+
+            /* 
+                During assignment of new value to the property, the js compiler validate the writable property 
+                if writable is true => re assign the value to the obj property
+                if writable is false => throws run time error (in strict mode)
+            */
+        </script>
+    </body>
+</html>

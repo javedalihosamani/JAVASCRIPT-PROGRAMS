@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Parameterised Map constructor</h1>
+        </center>
+        <hr>
+
+        <script>
+            // let instance = new Map([[key1,value1], [key2,value2]]); // Entries
+
+            let x  =  new Map([[1,3], [4,5], [8,9]]);
+            console.log('x = ', x);
+
+            document.write(`<h3> size = ${ x.size } </h3>`);
+            document.write(`<h3> x.get(4) = ${ x.get(4) } </h3>`);
+
+            x.clear(); // clear the entries
+            console.log('after clear x = ', x);
+            document.write(`<h3> after clear size = ${ x.size } </h3>`);
+        </script>
+    </body>
+</html>

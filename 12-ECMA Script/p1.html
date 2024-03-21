@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>let and const over var</h1>
+        </center>
+
+        <hr>
+
+        <script>
+            if (10 < 40) {
+                var x = 120; // var => global scope variable, let & const => local scope / block scope variables
+                document.write(`<h1> Inside the block = ${x} </h1>`);
+            }
+
+            document.write(`<h1> Outside the block = ${x} </h1>`);
+        </script>
+    </body>
+</html>

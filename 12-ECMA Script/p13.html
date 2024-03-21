@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>ECMA Script-5 Class</h1>
+        </center>
+        <hr>
+
+        <script>
+            // javascript v8 compiler => browser ES-5
+            // constructor function
+
+            function User() {
+                this.name = "Raju";
+                this.print = function () {
+                  document.write(`<h1> Hi ${this.name}, welcome to javascript </h1>`);
+                },
+                this.sayHi = function () {
+                  document.write(`<h1> Say hi to ${this.name} </h1>`);
+                }  
+            }
+
+            // instance to constructor
+            let y = new User();
+
+            y.print();
+            y.sayHi();
+        </script>
+    </body>
+</html>

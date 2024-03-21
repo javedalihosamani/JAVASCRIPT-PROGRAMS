@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Map() constructor</h1>
+        </center>
+        <hr>
+
+        <script>
+            var x = new Map(); // ref/ instance
+
+            /*  ref.set("property","value")
+                ref.get("property")
+            */
+
+            x.set("id", 1232);
+            x.set("title", "JavaScript");
+            x.set("duration", "1month");
+            console.log('set x =', x);
+
+            /* Object.keys() */
+
+            for(let item of x) {
+                console.log(item); // array [key,value]
+            }
+
+            for(let item of x.keys()) {
+                console.log('key', item); //keys
+            }
+
+            for(let [key,val] of x) {
+                console.log(` key = ${key} and value = ${val} `); // key:value
+            }
+        </script>
+    </body>
+</html>

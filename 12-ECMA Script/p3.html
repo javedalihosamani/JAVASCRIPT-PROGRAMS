@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Exception (Runtime errors) handling using try catch</h1>
+        </center>
+        <hr>
+
+        <script>
+            const x = 12;
+            console.log('before constant =', x); // 12
+
+            try {
+                // drop the run time error code statement
+                x=50; 
+            } catch(error) {
+                console.log(error);
+            }
+            console.log('after const = ', x); 
+        </script>
+    </body>
+</html>

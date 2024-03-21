@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Object.freeze()</h1>
+        </center>
+        <hr>
+
+        <script>
+            "use strict";
+            const user = {
+                name: "Raj"
+            };
+
+            console.log('before name', user.name);
+            try {
+                Object.freeze(user); // freeze the object *(readonly) not allow to accept new values in strict
+                user.name = "Suman";
+            } catch (error) {
+                    console.log(error.message)
+            }
+            console.log('after name', user.name);
+        </script>
+    </body>
+</html>

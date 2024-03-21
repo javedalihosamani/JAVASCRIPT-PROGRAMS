@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Rest Operator</h1>
+        </center>
+        <hr>
+
+        <script>
+            /* 11,22,33,44,55,66 = sum */
+            /* accepts parameter return as an array => Rest operator (...) */
+
+            function sumOfDigits(...sum){
+                console.log('num = ', sum); // array
+
+                let result = 0;
+                sum.forEach(item=>{
+                    result += item;
+                });
+
+                document.write(`<h1> Sum of (12,23,55,66,77,88,34,45,76) = ${result} </h1>`);
+            }
+
+            sumOfDigits(12,23,55,66,77,88,34,45,76);
+        </script>
+    </body>
+</html>

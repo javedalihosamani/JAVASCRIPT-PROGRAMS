@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Object.defineProperties()</h1>
+        </center>
+        <hr>
+
+        <script>
+            "use strict";
+            var user = {};
+
+            Object.defineProperties(user,{
+                "name": {
+                    value: "Suma",
+                    writable: true
+                },
+                "email": {
+                    value: "suma@gmail.com",
+                    writable: false
+                },
+                "age": {
+                    value: 22,
+                    writable: true
+                }
+            });
+            console.log('name', user.name);
+            console.log('email',user.email);
+            console.log('age', user.age);
+
+            try {
+                user.name = "Abhi";
+                user.email = "abhi@gmail.com";
+                user.age = 26;
+            } catch (err) {
+                console.log(err.message);
+            }
+
+            console.log('name', user.name);
+            console.log('email',user.email);
+            console.log('age', user.age);
+    </script>
+    </body>
+</html>

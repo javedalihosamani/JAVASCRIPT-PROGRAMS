@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMA</title>
+    </head>
+    <body>
+        <center>
+            <h1>Handling run time exception in strict mode using try catch</h1>
+        </center>
+        <hr>
+
+        <script>
+            "use strict";
+    
+            try {
+    
+                let car = {};
+    
+                Object.defineProperty(car, "model", {
+                    value: 2020,
+                    writable: false
+                });
+    
+                console.log('before = ', car);
+    
+                car.model = 2021;
+    
+                console.log('after =', car);
+    
+            }catch(error) {
+                console.log(error.message);
+            }
+        </script>
+    </body>
+</html>
