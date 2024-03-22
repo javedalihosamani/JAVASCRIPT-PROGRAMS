@@ -1,0 +1,67 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.title{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    margin: 30px;  
+    border-radius: 10px;       
+}
+.title>img{
+    height: 100px;
+    padding: 20px;
+    border-radius: 100%;
+    border: 5px solid #5fbaa7;
+    transition: all 2s;
+    animation: rotateImg infinite 10s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@keyframes rotateImg {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.title>h1{
+    color: #5fbaa7;
+    font-size: 30px;
+}
+.container{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    margin: 30px;  
+    border-radius: 10px;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+.container>.item{
+    flex: 1;
+}
+.container select, .container input{
+    padding: 10px 20px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    background: #5fbaa7;
+    color: #fff;
+    border-radius: 5px;
+}
+.swap-rate>button, .swap-rate>div{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: lightgray;
+    color: gray;
+    transition: all 0.5s;
+}
+.swap-rate>button:hover{
+    background: #5fbaa7;
+    color: #fff;
+    font-weight: bold;
+}
+.swap-rate>button, .container select{
+    cursor: pointer;
+}

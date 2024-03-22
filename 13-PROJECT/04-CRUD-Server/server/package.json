@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "json-server-reset": "^1.6.0"
+  }
+}

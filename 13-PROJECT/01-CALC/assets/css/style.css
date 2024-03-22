@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+section{
+    background: url(../images/banner.jpg) no-repeat center;
+    background-size: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section>div{
+    border: 2px solid #ccc;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(242, 235, 235, 0.655);
+    border-radius: 5px;
+}
+section>div>h1{
+    color: #fff;
+    text-shadow: 1px 1px 1px #000 ;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section>div>input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:  rgba(242, 235, 235, 0.4);
+    outline: none;
+    border: 2px solid transparent;
+    transition: 2s;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+section>div>input:focus{
+    border: 2px solid #000;
+}
+table, td{
+    border-collapse: collapse;
+    padding: 10px;
+}
+button{
+    width: 100%;
+    padding: 20px 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10%;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.64);
+    color: #fff;
+}
