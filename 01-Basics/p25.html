@@ -3,30 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JS-BASICS</title>
+        <title>BASICS</title>
     </head>
     <body>
         <center>
             <h1>Call Back Function..!</h1>
+            <p>A JavaScript callback is a function which is to be executed after another function has finished execution.</p>
         </center>
         <hr>
 
         <script>
+            document.write(`<h2>EXAMPLE-1</h2>`);
+            /* function displayAlert() {
+                alert("Hello World!");
+            }
+            setInterval("displayAlert()", 3000);
+            setInterval(displayAlert, 3000); */
+
+            document.write(`<h2>EXAMPLE-2</h2>`);
+            //setInterval(function displayAlert(){alert("Hello World!");}, 3000);
+            //setInterval(displayAlert =() => {alert("Hello World!");}, 3000);
+
+            document.write(`<h2>EXAMPLE-3</h2>`);
             function howAreYou(question, yes, no){
-               if (confirm(question)) {
-                yes();
-               } else {
-                no();
-               }
+               /*  document.write(question);
+                document.write(yes);
+                document.write(no); */
+
+                if (confirm(question)) {
+                    yes();
+                } else {
+                    no();
+                }
             }
             howAreYou(
                 "How Are You?",
-                function(){
-                    document.write(`<p>This is SECOND parameter value, Good</p>`);
-                },
-                function(){
-                    document.write(`<p>This is THIRD parameter value Bad</p>`);
-                }
+                function(){alert("I'm Fine")},
+                function(){alert("I'm Sad")}
             );
         </script>
     </body>
