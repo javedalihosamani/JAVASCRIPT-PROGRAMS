@@ -12,7 +12,12 @@
         <hr>
 
         <script>
+            document.write(document.documentElement);
+            console.log(document.documentElement);
+
             document.write(document.documentElement.getAttribute('lang'));
+            console.log(document.documentElement.getAttribute('lang'));
+
             document.write(document.getElementById("test").getAttribute("id"));
 
             document.body.style.background= "dimgrey";
