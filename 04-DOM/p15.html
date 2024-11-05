@@ -46,21 +46,25 @@
             </div>            
         </section>
 
-        <script>
-            let selBox = document.querySelector("section");
-            let selectedData = [];
+         <script>
+            document.querySelector("section").addEventListener("click", function(){
+                console.log(`SELECTED ITEM IS : ${event.target}`);
 
-            selBox.addEventListener('click', function(){
-                console.log(`Selected Item = ${event.target}`);
+                if (event.target.type === 'checkbox') {
+                    console.log(event.target.type);
+                    let checked = document.querySelectorAll('input[type=checkbox]:checked');
+                    console.log(checked);
+                    console.log(typeof checked);
+                    
+                    /*  let selectedData = Array.from(checked);
+                    for (let index = 0; index < selectedData.length; index++) {
+                        const element = selectedData[index].value;
+                    } */
 
-                if (event.target.type == 'checkbox') {
-                    let checked = document.querySelectorAll('input[type="checkbox"]:checked');
-                    console.log('CHECKED =', checked)
-                    console.log(typeof checked)
-                    selectedData = Array.from(checked).map(x => x.value);
-                    console.log('selected Data =', selectedData);
+                    let selectedData = Array.from(checked).map(x=>x.value);
+                    console.log(selectedData);
                 }
-            });
+            })
         </script>
     </body>
 </html>
