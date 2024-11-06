@@ -19,11 +19,16 @@
 
         <script>
             function setCookie(){
+               console.log(typeof document.cookie);
+
                 let name = "Be-practical Tech Solutions";
 
-                document.cookie = `User Name = ${name}; expires = Tue Dec 19 2023 10:46:37 GMT+0530`;
                 alert(Date());
+
+                document.cookie = `First Name =${name};expires = Wed Nov 06 2024 11:20:30 GMT+0530`;
+                document.cookie = `Last Name = Javascript`;
             }
+            
             function viewCookie(){
                 if (document.cookie.length === 0) {
                     alert("Cookie not available.");
@@ -31,6 +36,7 @@
                     document.getElementById("output").innerHTML = document.cookie;
                 }
             }
+            
             function resetCookie(){
                 if (document.cookie === "User Name = Be-practical Tech Solutions ") {
                     document.getElementById("output").innerHTML = '';
