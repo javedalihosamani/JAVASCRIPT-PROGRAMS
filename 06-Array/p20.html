@@ -13,7 +13,7 @@
 
         <center>
             <h2>19) entries();</h2>
-            <p>The entries() method returns an array Iterator object whith key/value pairs.</p>
+            <p>The entries() method returns an array Iterator object with key/value pairs.</p>
             <p>And this method do es not changes the original array</p>
         </center>
         <hr>
@@ -27,10 +27,20 @@
         <script>
             let days = ["Sun", 'Mon', "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-            document.write(`<p>Array.entries() : ${days.entries()}</p>`);
+            document.write(`<p>Array.entries() : ${days.entries()}</p><hr>`);
 
+            let iterator1 = days.entries();
+            document.write(`<p>Iterator object with key/value pairs : ${iterator1.next().value}</p>`);
+            document.write(`<p>Iterator object with key/value pairs : ${iterator1.next().value}</p><hr>`);
+
+            document.write(`<h3>Example-1</h3>`);
             for (const iterator of days) {
                 document.write(`<p>Array.entries() : ${iterator}</p>`);   
+            }
+
+            document.write(`<hr><h3>Example-2</h3>`);
+            for (const [index,element] of days.entries()) {
+                document.write(`<p>Index is(key) : ${index} and Value is :${element}</p>`);
             }
         </script>
     </body>
