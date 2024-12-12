@@ -10,25 +10,50 @@
             <h1>PROMISES</h1>
         </center>
         <hr>
+
         <script>
-            fetch(`https://panorbit.in/api/users.json`)
-            .then(response => response.json()).then(data=>{
-                console.log("Server Data = ", data);
-                data.users.forEach(element => {
-                    console.log("ForEach = ",element);
+            fetch(`https://jsonplaceholder.typicode.com/todos`,
 
-                    let h2 = document.createElement('h2');
-                    h2.innerHTML = element.name;
+            // Insert Data into JSONPlaceholder(TEST CASE CODE)
+            /* {
+                method: 'POST', //HTTP-METHODS =  POST/GET/PUT/PATCH/DELETE
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Authorization': 'Bearer YOUR_ACCESS_TOKEN',
+                    'CrossOrigin': true,
+                    "Access-Control-Allow-Origin": "*"
+                },
+                body: JSON.stringify({
+                    userId: 1,
+                    title: 'New task',
+                    completed: false
+                })
+            } */
+        )
+            .then(response=>response.json())
+            .then((data)=>{
+                console.log(data);
+                data.forEach(item => {
+                    document.write(`<h2>id: ${item.id}, title: ${item.title}, completed: ${item.completed}</h2>`);
 
-                    document.body.append(h2);
-
-                    let img = document.createElement('img');
-                    img.src = element.profilepicture;
-                    document.body.append(img);
-
-                    setTimeout(function(){img.remove()},4000);
+                   /*  // Create a new promise
+                    let newPromise = new Promise((resolve, reject) => {
+                        setTimeout(() => {
+                            if(item.completed) resolve(`Task completed successfully: ${item.title}`);
+                            else reject(`Task not completed: ${item.title}`);
+                        }, 2000);
+                    });
+                    
+                    // Resolve the new promise
+                    newPromise.then((message) => {
+                        document.write(`<p>${message}</p>`);
+                    }).catch((message) => {
+                        document.write(`<p>${message}</p>`);
+                    }); */
                 });
-            }).catch(error => {console.log(error.message)});
+            })
+            .catch((error)=> {console.error(error)});
         </script>
     </body>
 </html>
